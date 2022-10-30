@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "grow-code"
+  },
+  "targets": {
+    "grow-code": {
+      "hosting": {
+        "growCode": [
+          "grow-code"
+        ]
+      }
+    }
+  }
+}

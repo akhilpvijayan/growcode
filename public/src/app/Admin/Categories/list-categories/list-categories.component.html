@@ -1,0 +1,31 @@
+
+
+<div class="container-fluid">
+
+        <div class="col-md-8 mt-2">
+            <h5 class="text-danger"> Category List</h5>
+            <div class="card p-3 shadow">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Sl.No.</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let studnet of Category; let i = index">
+                            <td>{{i+1}}</td>
+                            <td >{{studnet.category}}</td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="removeCategory(studnet)">Delete</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+</div>
